@@ -1,0 +1,18 @@
+# Configuración de ejemplo para variables de Terraform
+# Copia este archivo a terraform.tfvars y ajusta los valores según tus necesidades
+
+aws_region = "us-east-1"
+environment = "production"
+
+# Tipo de instancia Redis (ajustar según carga esperada)
+# cache.t3.micro para desarrollo/pruebas
+# cache.t3.small/medium para producción ligera
+# cache.r5.large para producción con alta carga
+redis_node_type = "cache.t3.micro"
+
+# Número de nodos (mínimo 2 para alta disponibilidad)
+redis_num_nodes = 2
+
+# Token de autenticación - GENERAR UNO SEGURO
+# Puedes generar uno con: openssl rand -base64 32
+redis_auth_token = "tu-token-seguro-aqui"

@@ -1,0 +1,28 @@
+# Archivos de Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Archivos de variables sensibles
+terraform.tfvars
+
+# Logs
+*.log
+
+# Archivos temporales
+.tmp/
+temp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node modules (si se agregan scripts de prueba)
+node_modules/
