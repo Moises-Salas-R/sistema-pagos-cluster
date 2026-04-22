@@ -95,7 +95,7 @@ resource "aws_elasticache_subnet_group" "redis_subnet_group" {
 
 # Parámetros de Redis
 resource "aws_elasticache_parameter_group" "redis_params" {
-  family = "redis7.x"
+  family = "redis7"
   name   = "sistema-pagos-params"
 
   parameter {
