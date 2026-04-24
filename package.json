@@ -1,0 +1,24 @@
+{
+  "name": "sistema-pagos-redis-test",
+  "version": "1.0.0",
+  "description": "Scripts de prueba para el cluster Redis del sistema de pagos",
+  "main": "test-redis.js",
+  "scripts": {
+    "test": "node test-redis.js",
+    "test-connection": "node -e \"require('./test-redis').testConnection()\"",
+    "load-catalog": "node -e \"require('./test-redis').guardarCatalogoCompleto()\"",
+    "get-catalog": "node -e \"require('./test-redis').obtenerCatalogoCompleto()\""
+  },
+  "dependencies": {
+    "redis": "^4.6.10"
+  },
+  "keywords": [
+    "redis",
+    "aws",
+    "elasticache",
+    "sistema-pagos",
+    "catalog"
+  ],
+  "author": "",
+  "license": "MIT"
+}
