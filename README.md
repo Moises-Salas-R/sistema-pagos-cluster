@@ -182,20 +182,3 @@ Para escalar el cluster:
 1. **Vertical**: Cambiar `redis_node_type` a una instancia más grande
 2. **Horizontal**: Incrementar `redis_num_nodes` (máximo 6 para cluster mode)
 
-## Soporte
-
-Para problemas o preguntas:
-
-1. Revisa los logs de CloudWatch para ElastiCache
-2. Verifica la configuración de security groups
-3. Confirma la conectividad desde las Lambdas
-
-## Destrucción
-
-Para eliminar toda la infraestructura:
-```bash
-terraform destroy
-```
-
-**Advertencia:** Esto eliminará todos los datos del cluster Redis del sistema de pagos.
->>>>>>> develop
